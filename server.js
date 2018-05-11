@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 //   res.render('maintenance.hbs');
 // });
 
-app.use(express.static(__dirname + '/public')); // register middleware
+app.use(express.static(__dirname + '/public')); // register middleware, one or more
 
 hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear()
